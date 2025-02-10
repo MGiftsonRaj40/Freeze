@@ -192,14 +192,14 @@
         let currentPosition = 0;
         let autoPlayInterval;
         const autoPlayDelay = 3000;
-        const isMobile = window.innerWidth > 500; // Check if in mobile view
+        const isMobile = window.innerWidth; 
 
         function slideNext() {
-            if (isMobile) {
-                currentPosition += slides[0].offsetHeight + 20; // Move vertically
+            if (window.innerWidth < 500) {
+                currentPosition += slides[0].offsetHeight + 20; 
                 slider.style.transform = `translateY(-${currentPosition}px)`;
             } else {
-                currentPosition += slides[0].offsetWidth + 35; // Move horizontally
+                currentPosition += slides[0].offsetWidth + 35; 
                 slider.style.transform = `translateX(-${currentPosition}px)`;
             }
 
