@@ -752,13 +752,8 @@ footer{
     .foot-top{
         flex-direction: column;
     }
-    .foot-top div:nth-child(even){
-        float: right;
-        text-align: right;
-    }
-    .foot-top div:nth-child(3){
-        position: absolute;
-        transform: translateY(80px);
+    .social-links a{
+        margin-right: 10px;
     }
 }
 
