@@ -33,7 +33,7 @@
     <div class="second-page">
         <div id="About">
             <br>
-            At Freeze Enterprises, <b>we specialize in premium water heater service and installation</b>. With years of experience in the industry, our skilled technicians ensure your water heating systems are efficient, reliable, and tailored to your needs.<br>
+            At Freeze Enterprises, <b>we specialize in premium water heater service and installation</b>.With years of experience in the industry, our skilled technicians ensure your water heating systems are efficient, reliable, and tailored to your needs.<br>
             We are committed to providing top-notch service, from expert installations to timely repairs, all while delivering exceptional customer care.<br>
             At Freeze Enterprises, we understand the importance of a comfortable and functional home, and we're here to help you achieve just that.
         </div>
@@ -173,22 +173,17 @@
                 </div>
             </div>
         </div>
-        <center>
-        <div class="review-bot">
-            
-            <div class="more">
-                
-                <a href="https://g.co/kgs/ZP2Y6bH">For More Reviews</a>
-            
-            </div>
-        </center>
-            <div class="slider-controls">
-                <button id="prevBtn"><</button>
-                <button id="nextBtn">></button>
-            </div>
+    </div>
+    <div class="review-bot">
+        <div class="more">
+            <a href="https://g.co/kgs/ZP2Y6bH">For More Reviews</a>
+        </div>
+        <div class="slider-controls">
+            <button id="prevBtn"><</button>
+            <button id="nextBtn">></button>
         </div>
     </div>
-    
+
     <script>
         const slider = document.querySelector('.slider');
         const slides = document.querySelectorAll('.slide');
@@ -197,7 +192,7 @@
         let currentPosition = 0;
         let autoPlayInterval;
         const autoPlayDelay = 3000;
-        const isMobile = window.innerWidth <= 768; // Check if in mobile view
+        const isMobile = window.innerWidth > 500; // Check if in mobile view
 
         function slideNext() {
             if (isMobile) {
